@@ -15,7 +15,7 @@ ___
    2. [Lesson 02 - Repositories](#lesson02)
    3. [Lesson 03 - Variables, expressions, operators](#lesson03)
    4. [Lesson 04 - One-Dimensional arrays](#lesson04)
-
+   4. [Lesson 05 - Multidimensional arrays](#lesson05)
 ___
 
 <a id="chapter01"></a>
@@ -38,8 +38,7 @@ ___
 - [x] write the first program
 
 **Difficulty doing homework:**
-
-There were no problems with homework.
+* There were no problems with homework.
 
 [Table of contents](#anchor)
 ___
@@ -68,8 +67,7 @@ ___
 - [x] add files from the first and second lessons to branches other than main and make a pull request.
 
 **Difficulty doing homework:**
-
-There were difficulties with creating branches in order to correctly create a pull request. And also need more practice in working with GIT with the terminal.
+* There were difficulties with creating branches in order to correctly create a pull request. And also need more practice in working with GIT with the terminal.
 
 [Table of contents](#anchor)
 ___
@@ -101,14 +99,13 @@ ___
 - [x] Output the first 10 numbers of the sequence 0, -5, -10, -15...
 - [x] Write a program that displays the squares of numbers from 10 to 20 inclusive.
 
-**Homework required. Part №3:**
+**HoHomework. Optional part:**
 - [x] Display the first 11 terms of the Fibonacci sequence.
 - [x] For each month, the bank accrues 7% of the amount to the deposit amount. Write a program that the user enters the deposit amount and the number of months. And the bank calculates the final amount of the deposit taking into account the accrual of interest in each month. To calculate an amount including interest use a for loop.
 - [x] Write a program that prints the multiplication table to the console.
 
 **Difficulty doing homework:**
-
-There were no problems with homework. Material learned and understood.
+* There were no problems with homework. Material learned and understood.
 
 [Table of contents](#anchor)
 
@@ -126,14 +123,48 @@ There were no problems with homework. Material learned and understood.
 - [x] Create and fill an array with random numbers and output the minimum, maximum and average value. To generate a random number, use the method Math.random(). Let it be possible to create an array of arbitrary size. Let the size of the array is entered from the console.
 - [x] Create 2 arrays of 5 numbers. Print the arrays to the console on two separate lines. Calculate the arithmetic mean of the elements of each array and tell for which from the arrays, this value turned out to be greater (or report that their averages arithmetic are equal).
 
-**Homework required. Part №2:**
+**Homework. Optional part:**
 - [x] Create an array of N-random integers and print it to the screen. Let the size of the array is set from the console and the size of the array can be greater than 5 and less than or equal to 10. If N is not satisfies the conditions - display a message. If the user entered the wrong N, then the program should ask the user to repeat the input. Create a second array of only even ones elements of the first array, if any, and display it on the screen.
 - [x] Create an array and populate it. Print the array to the screen as a string. Will replace each element with odd index to 0. Again, display the array on a separate line.
 - [x] Create an array of strings. Fill it in with arbitrary people's names. Sort the array. Output the result to the console.
 - [x] Implement the bubble sort algorithm by commenting on each step.
 
 **Difficulty doing homework:**
-
 * The problems were from the second task of the first part of the homework. I did not understand how to correctly add all elements to the new array, except for unnecessary ones.
+
+[Table of contents](#anchor)
+
+<a id="lesson05"></a>
+### ___Lesson 05 - Multidimensional arrays___
+**This lesson talked about:**
+* Two-dimensional, three-dimensional and n-dimensional arrays 
+* Array operations
+
+**Homework required. Part №1:**
+- [x] Create a three-dimensional array of integers. With the help of cycles "pass" throughout array and increment each element by the given number. Let the number that will be increase each element, is set from the console.
+- [x] Chess board. Create a checkerboard coloring program with cycle. Use a two-dimensional 8x8 String array.
+  Use cycles to set elements of value B (Black) or W (White). The result of the program:  
+W B W B W B W B  
+B W B W B W B W  
+W B W B W B W B  
+B W B W B W B W  
+W B W B W B W B  
+B W B W B W B W  
+W B W B W B W B  
+B W B W B W B W
+
+**Homework. Optional part:**
+- [x] Multiplication of two matrices. Construction of two arrays of 3x3 sizes (two matrices). Write program for multiplying two matrices. Test data:
+  * first array {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 0}}
+  * second array {{1, 2, 3}, {1, 1, 1}, {0, 0, 0}, {2, 1, 0}}
+  * result: {{1, 2, 3}, {1, 1, 1}, {0, 0, 0}}
+- [x] Create a two-dimensional array of integers. Print the sum of all elements to the console.
+- [x] Create a two-dimensional array. Print the diagonals of the array to the console.
+- [x] Create a two-dimensional array of integers. Sort the elements in the rows of a two-dimensional array by ascending.
+
+**Difficulty doing homework:**
+* There were minor difficulties with the first and third tasks from the additional homework. 
+  * In the first task, it is not the most obvious how to correctly multiply a matrix row by a column. 
+  * In the third task, I did not immediately come to how to correctly derive the side diagonal.
 
 [Table of contents](#anchor)
