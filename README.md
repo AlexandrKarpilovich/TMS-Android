@@ -15,7 +15,8 @@ ___
    2. [Lesson 02 - Repositories](#lesson02)
    3. [Lesson 03 - Variables, expressions, operators](#lesson03)
    4. [Lesson 04 - One-Dimensional arrays](#lesson04)
-   4. [Lesson 05 - Multidimensional arrays](#lesson05)
+   5. [Lesson 05 - Multidimensional arrays](#lesson05)
+   6. [Lesson 06 - Classes and Objects](#lesson06)
 ___
 
 <a id="chapter01"></a>
@@ -166,5 +167,46 @@ B W B W B W B W
 * There were minor difficulties with the first and third tasks from the additional homework. 
   * In the first task, it is not the most obvious how to correctly multiply a matrix row by a column. 
   * In the third task, I did not immediately come to how to correctly derive the side diagonal.
+
+[Table of contents](#anchor)
+
+<a id="lesson06"></a>
+### ___Lesson 06 - Classes and Objects___
+**This lesson talked about:**
+* Concept of class, object, constructor
+* Methods
+* Object
+* equals and hashCode
+
+**Homework required. Part №1:**
+- [x] Create a class CreditCard with fields account number, current amount on the account.   
+      Add a method that allows you to charge an amount to a credit card.   
+      Add a method that allows you to withdraw some amount from the card.   
+      Add a method that displays the current information about the card.   
+      Write a program that creates three objects of class CreditCard given an account number and an initial amount.   
+      Test script to check: put money on the first two cards and withdraw from the third.
+
+**Homework. Optional part №1:**
+- [x] Create a class to describe the computer, this class should contain fields: cost, model (string type), RAM and HDD.   
+      You should create your own classes for the RAM and HDD fields. Classes for RAM and HDD must have a default constructor and a constructor with all parameters.   
+      The RAM class has "name" and "capacity" fields.   
+      The HDD class has the fields "name", "capacity" and "type" (external or internal).   
+      The Computer class must have two constructors:   
+       - the first one - with cost and model parameters,   
+       - the second - with all fields.   
+      When creating a computer object using the first constructor, the RAM and HDD fields must be created using the default constructors.    
+      In each of the classes, provide methods for displaying complete information (displaying all fields and all values).
+
+**Homework. Optional part №2:**
+- [x] Create a class that describes the ATM.   
+      The set of banknotes in the ATM must be specified by three properties: the number of banknotes of 20, 50 and 100 denominations.   
+      Make a method for adding money to an ATM.   
+      Make a function that withdraws money, which takes the amount of money, and returns a boolean value - the success of the operation.   
+      When withdrawing money, the function should print how many bills of what denomination the amount is issued.   
+      Create a constructor with three parameters - the number of banknotes of each denomination.   
+
+**Difficulty doing homework:**
+* Correctness of working with classes when there are several classes that depend on each other
+* Overriding Methods
 
 [Table of contents](#anchor)
