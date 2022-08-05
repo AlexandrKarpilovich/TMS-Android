@@ -17,6 +17,7 @@ ___
    4. [Lesson 04 - One-Dimensional arrays](#lesson04)
    5. [Lesson 05 - Multidimensional arrays](#lesson05)
    6. [Lesson 06 - Classes and Objects](#lesson06)
+   7. [Lesson 07 - OOP principles](#lesson07)
 ___
 
 <a id="chapter01"></a>
@@ -208,5 +209,49 @@ B W B W B W B W
 **Difficulty doing homework:**
 * Correctness of working with classes when there are several classes that depend on each other
 * Overriding Methods
+
+[Table of contents](#anchor)
+
+
+
+
+
+
+
+
+<a id="lesson07"></a>
+### ___Lesson 07 - OOP principles___
+**This lesson talked about:**
+* Inheritance 
+* Encapsulation 
+* Polymorphism
+
+**Homework required. Part №1:**
+- [x] Create a Phone class that contains the number, model, and weight variables.   
+Create three instances of this class. Print the values of their variables to the console.   
+Add methods to the Phone class: receiveCall, has one parameter - the name of the caller.   
+Prints the message “{name} is ringing” to the console. getNumber - returns the phone number.  
+Call these methods for each of the objects.  
+Add a constructor to the Phone class that takes three parameters as input for initialization of class variables - number, model and weight.  
+Add a constructor that takes two parameters as input for initialization class variables - number, model.  
+Add constructor without parameters.  
+Call a constructor with two parameters from a constructor with three parameters.  
+Add an overloaded receiveCall method that takes two parameters - the name of the caller and the phone number of the caller.  
+Call this method.  
+Create a sendMessage method with variable length arguments. This method takes as input phone numbers to which the message will be sent. The method displays the numbers of these phones.
+
+**Homework. Optional part №1:**
+- [x] Create a program to simulate the work of the clinic.  
+Let there be three doctors in surgery: a surgeon, a general practitioner and a dentist.  
+Every doctor has a method to "treat", but every doctor heals in his own way.  
+Also provide for the class "Patient" and the class "Treatment plan".  
+Create an object of class "Patient" and add a treatment plan to the patient.  
+Also create a method that will be prescribed by the doctor to the patient according to the treatment plan.  
+If the treatment plan has code 1, a surgeon is appointed and a treatment method is prescribed.  
+If the treatment plan has code 2, a dentist is appointed and a treatment method is prescribed.  
+If the treatment plan has any other code, appoint a therapist and prescribe a treatment method.
+
+**Difficulty doing homework:**
+* The difficulties were in the homework of the optional part. According to the condition, as I understand it, a treatment plan is already known and a doctor is appointed from this treatment plan. But usually, first, an examination is carried out, a doctor is prescribed, and then a treatment plan and methods of treatment. After all, the patient does not come to the clinic with a treatment plan. Because of this, my solution to the task may not be entirely accurate as necessary by condition.
 
 [Table of contents](#anchor)
