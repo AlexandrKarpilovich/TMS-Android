@@ -212,13 +212,6 @@ B W B W B W B W
 
 [Table of contents](#anchor)
 
-
-
-
-
-
-
-
 <a id="lesson07"></a>
 ### ___Lesson 07 - OOP principles___
 **This lesson talked about:**
