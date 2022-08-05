@@ -100,7 +100,8 @@ public class Main {
     /*
         1. Methods for Phone class
      */
-    // Random number phone generation
+    // Generate a random phone number in international format, where 375 is the country code, 25 is the operator code,
+    // and then the seven-digit phone number
     static long generatePhoneNumber() {
         return Long.parseLong("37525" + ((long) (1_000_000 + Math.random() * 9_999_999)));
     }
