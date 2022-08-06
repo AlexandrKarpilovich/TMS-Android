@@ -3,18 +3,16 @@ package lesson_07_Java.Clinic;
 /**
  * Class describing the entity Patient
  */
-public class Patient extends TreatmentPlan {
-    private String patient; // Patient variable
+public class Patient {
+    private final String name;
 
-    // Default constructor
-    public Patient() {
+    // Constructor
+    public Patient(String name) {
+        this.name = name;
     }
 
-    public String getPatient() {
-        return patient;
-    }
-
-    public void setPatient(String patient) {
-        this.patient = patient;
+    @Override
+    public String toString() {
+        return name;
     }
 }

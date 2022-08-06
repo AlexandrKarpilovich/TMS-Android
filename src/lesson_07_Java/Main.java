@@ -89,12 +89,17 @@ public class Main {
             2. Clinic class
         */
         // Test check
-        Patient patient = new Patient(); // Create new object Patient
-        patient.setPatient("Ivanov Ivan"); // Set the name of the patient
-        int treatmentCode = treatmentCodeGeneration(); // Remember the treatment plan code
+        Patient patient = new Patient("Ivanov Ivan"); // Create a new patient
+        Doctor doctor = new Doctor(""); // Create a doctor object
+        TreatmentPlan treatmentPlan = new TreatmentPlan(""); // Create a treatment plan object
+        PatientMedicalCard card = new PatientMedicalCard(""); // Create a patient card object
 
-        // Output main information about patient and treatment plan
-        outputGeneralTreatmentInformation(treatmentCode, patient);
+        String appointedDoctor = appointedDoctor(card, doctor);
+
+        System.out.println("Patient: " + patient + ".\n" +
+                treatmentPlan.treatmentPlan(appointedDoctor) + "\n" +
+                doctor.getMainInformation(appointedDoctor) + "\n" +
+                doctor.treat() + "\n");
     }
 
     /*
@@ -113,39 +118,18 @@ public class Main {
                 ". Phone weight: " + phone.getWeight());
     }
 
+
     /*
         2. Methods for Clinic class
-     */
-    // Treatment plan generation by code from 1 to 3
-    static int treatmentCodeGeneration() {
-        return (int) ((Math.random() * 3) + 1);
-    }
-
-    // Choose the right doctor according to the treatment code
-    static String choosingADoctor(int code, Patient patient) {
+    */
+    // Choose a doctor
+    static String appointedDoctor(PatientMedicalCard planCode, Doctor doctor) {
+        int code = planCode.choseATreatmentPlanCode();
         if (code == 1) {
-            return patient.appointedSurgeon();
+            return doctor.setDoctor("Surgeon");
         } else if (code == 2) {
-            return patient.appointedDentist();
+            return doctor.setDoctor("Dentist");
         }
-        return patient.appointedTherapist();
-    }
-
-    // Choose the right treatment plan according to the treatment code
-    static String choosingATreatmentPlan(int code, Patient patient) {
-        if (code == 1) {
-            return patient.surgeonTreatmentPlan();
-        } else if (code == 2) {
-            return patient.dentistTreatmentPlan();
-        }
-        return patient.therapistTreatmentPlan();
-    }
-
-    // Output general information about the treatment
-    static void outputGeneralTreatmentInformation(int code, Patient patient) {
-        System.out.println("The patient " + patient.getPatient() +
-                " has treatment code: " + code + ". " +
-                "\n" + choosingADoctor(code, new Patient()) +
-                "\n" + choosingATreatmentPlan(code, new Patient()));
+        return doctor.setDoctor("Therapist");
     }
 }

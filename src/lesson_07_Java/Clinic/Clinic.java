@@ -4,50 +4,24 @@ package lesson_07_Java.Clinic;
  * Class describing the entity Clinic
  */
 public class Clinic {
-    private String surgeon; //
-    private String dentist; //
-    private String therapist; //
+    private String doctor;
 
-    // Default constructor
-    public Clinic() {
+    // Constructor
+    public Clinic(String doctor) {
+        this.doctor = doctor;
     }
 
-    // Appointed Surgeon
-    public String appointedSurgeon() {
-        return "Appointed doctor is a Surgeon.";
+    // Output main information
+    public String getMainInformation(String doctor) {
+        return "Greetings. Choose a " + doctor;
     }
 
-    // Appointed Dentist
-    public String appointedDentist() {
-        return "Appointed doctor is a Dentist.";
+    public String getDoctor() {
+        return doctor;
     }
 
-    // Appointed Therapist
-    public String appointedTherapist() {
-        return "Appointed doctor is a Therapist.";
-    }
-
-    public String getSurgeon() {
-        return surgeon;
-    }
-
-    public void setSurgeon(String surgeon) {
-        this.surgeon = surgeon;
-    }
-
-    public String getDentist() {
-        return dentist;
-    }
-
-    public void setDentist(String dentist) {
-        this.dentist = dentist;
-    }
-
-    public String getTherapist() {
-        return therapist;
-    }
-
-    public void setTherapist(String therapist) {
-        this.therapist = therapist;
+    public String setDoctor(String doctor) {
+        this.doctor = doctor;
+        return doctor;
     }
 }
