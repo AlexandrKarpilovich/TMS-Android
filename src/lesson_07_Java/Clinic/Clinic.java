@@ -4,24 +4,25 @@ package lesson_07_Java.Clinic;
  * Class describing the entity Clinic
  */
 public class Clinic {
-    private String doctor;
+    private Doctors doctors;
 
     // Constructor
-    public Clinic(String doctor) {
-        this.doctor = doctor;
+    public Clinic() {
     }
 
     // Output main information
-    public String getMainInformation(String doctor) {
-        return "Greetings. Choose a " + doctor;
+    public String getMainInformation() {
+        return "Greetings. Choose a doctor";
     }
 
-    public String getDoctor() {
-        return doctor;
+    /*
+        Getter and Setter
+    */
+    public Doctors getDoctors() {
+        return doctors;
     }
 
-    public String setDoctor(String doctor) {
-        this.doctor = doctor;
-        return doctor;
+    public void setDoctors(Doctors doctors) {
+        this.doctors = doctors;
     }
 }

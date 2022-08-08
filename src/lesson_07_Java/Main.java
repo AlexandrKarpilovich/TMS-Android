@@ -88,18 +88,44 @@ public class Main {
         /*
             2. Clinic class
         */
-        // Test check
-        Patient patient = new Patient("Ivanov Ivan"); // Create a new patient
-        Doctor doctor = new Doctor(""); // Create a doctor object
-        TreatmentPlan treatmentPlan = new TreatmentPlan(""); // Create a treatment plan object
-        PatientMedicalCard card = new PatientMedicalCard(""); // Create a patient card object
+        // Create an object of the patient class and set patient name
+        Patient patient = new Patient();
+        patient.setName("Ivanov Ivan");
 
-        String appointedDoctor = appointedDoctor(card, doctor);
+        // Create an object of the TreatmentPlan class and set the treatment plan code in a new variable
+        TreatmentPlan code = new TreatmentPlan();
+        int treatmentCode = code.setCode(code.choseATreatmentPlanCode());
 
-        System.out.println("Patient: " + patient + ".\n" +
-                treatmentPlan.treatmentPlan(appointedDoctor) + "\n" +
-                doctor.getMainInformation(appointedDoctor) + "\n" +
-                doctor.treat() + "\n");
+        // Create an object of the class Surgeon and
+        // set the information about the treatment of the surgeon to a new variable
+        Surgeon surgeon = new Surgeon();
+        String surgeonInfo = surgeon.setAppointment(surgeon.treat());
+
+        // Create an object of the class Dentist and
+        // set the information about the treatment of the dentist to a new variable
+        Dentist dentist = new Dentist();
+        String dentistInfo = dentist.setAppointment(dentist.treat());
+
+        // Create an object of the class Therapist and
+        // set the information about the treatment of the therapist to a new variable
+        Therapist therapist = new Therapist();
+        String therapistInfo = therapist.setAppointment(therapist.treat());
+
+        // Create an object of the PatientMedicalCard class
+        // and set into account information about doctors' prescriptions
+        PatientMedicalCard card = new PatientMedicalCard();
+        card.setCode(treatmentCode);
+        card.setSurgeonInfo(surgeonInfo);
+        card.setDentistInfo(dentistInfo);
+        card.setTherapistInfo(therapistInfo);
+
+        // Pass the treatment code to the Patient class setter
+        patient.setCode(treatmentCode);
+
+        // Output information
+        System.out.println("Patient: " + patient.patientName());
+        System.out.println(patient.treatmentPlan());
+        System.out.println(card.choiceOfDoctor());
     }
 
     /*
@@ -107,29 +133,14 @@ public class Main {
      */
     // Generate a random phone number in international format, where 375 is the country code, 25 is the operator code,
     // and then the seven-digit phone number
-    static long generatePhoneNumber() {
+    public static long generatePhoneNumber() {
         return Long.parseLong("37525" + ((long) (1_000_000 + Math.random() * 9_999_999)));
     }
 
     // Output main information about the phone
-    static void outputMainPhoneInformation(Phone phone) {
+    public static void outputMainPhoneInformation(Phone phone) {
         System.out.println("Phone number: " + generatePhoneNumber() +
                 ". Phone model: " + phone.getModel() +
                 ". Phone weight: " + phone.getWeight());
-    }
-
-
-    /*
-        2. Methods for Clinic class
-    */
-    // Choose a doctor
-    static String appointedDoctor(PatientMedicalCard planCode, Doctor doctor) {
-        int code = planCode.choseATreatmentPlanCode();
-        if (code == 1) {
-            return doctor.setDoctor("Surgeon");
-        } else if (code == 2) {
-            return doctor.setDoctor("Dentist");
-        }
-        return doctor.setDoctor("Therapist");
     }
 }
