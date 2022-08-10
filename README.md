@@ -18,6 +18,7 @@ ___
    5. [Lesson 05 - Multidimensional arrays](#lesson05)
    6. [Lesson 06 - Classes and Objects](#lesson06)
    7. [Lesson 07 - OOP principles](#lesson07)
+   8. [Lesson 08 - Interfaces and abstract classes](#lesson08)
 ___
 
 <a id="chapter01"></a>
@@ -246,5 +247,63 @@ If the treatment plan has any other code, appoint a therapist and prescribe a tr
 
 **Difficulty doing homework:**
 * The difficulties were in the homework of the optional part. According to the condition, as I understand it, a treatment plan is already known and a doctor is appointed from this treatment plan. But usually, first, an examination is carried out, a doctor is prescribed, and then a treatment plan and methods of treatment. After all, the patient does not come to the clinic with a treatment plan. Because of this, my solution to the task may not be entirely accurate as necessary by condition.
+
+[Table of contents](#anchor)
+
+<a id="lesson08"></a>
+### ___Lesson 08 - Interfaces and abstract classes___
+**This lesson talked about:**
+* Interface concept 
+* Abstract class concept 
+* Abstract Methods
+
+**Homework required. Part №1:**
+- [x] Write a hierarchy of classes "Shapes".   
+  Shape -> Triangle -> Rectangle -> Circle.   
+  Implement area calculation function for each shape type and perimeter calculation.   
+  Create an array of 5 shapes.   
+  Display the sum of the perimeters of all the shapes in the array.     
+
+**Homework required. Part №2:**
+- [x] Create classes "Director", "Worker", "Accountant".   
+  Implement an interface with a method that prints the job title and implement this method in the generated classes.
+
+**Homework. Optional part №1:**
+- [x] Create a system for accounting documents.
+  Create a Register class that will have methods:
+  - saving the document in the register
+  - providing information about the document
+    The system can work with three types of documents:
+1) Contract for the supply of goods
+   Contains fields:
+   - Document Number
+   - Type of goods
+   - Number of goods
+   - Document date
+2) Contract with an employee
+   Contains fields:
+   - Document Number
+   - Document date
+   - Document date
+   - Contract end date
+   - Employee name
+3) Financial invoice
+     Contains fields:
+   - Monthly total
+   - Document date
+   - Document Number
+   - Department code
+- The register class must contain an array inside itself, and when a document is added to the register, this added document must be added to the array;
+- The array for the register class must be of size 10;
+- For "Document Date" fields, the Date data type should be used;
+- In the method of providing information about the document, you should display information about the document passed by the input parameter;
+- Each class for describing documents must contain a constructor with and without parameters;
+- To simulate the operation of the system, create a Main class that will contain only one public static void main method
+  In this method, write code to create each of the document types, add them to the register, and display information about the document;
+- Place all classes in packages;
+- When performing a task, use the concepts of interfaces and abstract classes
+
+**Difficulty doing homework:**
+* It's not entirely clear when to use an abstract class and when to use an interface
 
 [Table of contents](#anchor)
