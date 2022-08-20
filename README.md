@@ -19,6 +19,8 @@ ___
    6. [Lesson 06 - Classes and Objects](#lesson06)
    7. [Lesson 07 - OOP principles](#lesson07)
    8. [Lesson 08 - Interfaces and abstract classes](#lesson08)
+   9. [Lesson 09 - Exceptions](#lesson09)
+   10. [Lesson 10 - String processing](#lesson10)
 ___
 
 <a id="chapter01"></a>
@@ -305,5 +307,77 @@ If the treatment plan has any other code, appoint a therapist and prescribe a tr
 
 **Difficulty doing homework:**
 * It's not entirely clear when to use an abstract class and when to use an interface
+
+[Table of contents](#anchor)
+
+<a id="lesson09"></a>
+### ___Lesson 09 - Exceptions___
+**This lesson talked about:**
+* Hierarchy of exceptions and errors 
+* try-catch-finally 
+* Custom exceptions 
+* Keywords throw, throws
+
+**Homework:**
+- [x] Homework merged with tenth lesson
+
+**Difficulty doing homework:**
+* Need more practice with overriding methods
+
+[Table of contents](#anchor)
+
+<a id="lesson10"></a>
+### ___Lesson 10 - String processing___
+**This lesson talked about:**
+* String 
+* StringBuilder and StringBuffer
+
+**Homework required. Part №1:**
+- [x] Write a program with the following functionality:   
+Pass a string to the input (we will assume that this is the document number).   
+The document number has the format xxxx-yyy-xxxx-yyy-xyxy, where x is a number and y is a letter.   
+Display the first two blocks of 4 digits on the screen in one line.    
+Display the document number on the screen, but replace blocks of three letters with ***(each letter will be replaced with *).   
+Display only one letter from the document number in the format yyy/yyy/y/y in lower case.   
+Display letters from the document number in the format "Letters: yyy/yyy/y/y" in uppercase (implemented using the StringBuilder class).    
+Check whether the document number contains the sequence abc and display a message whether it contains it or not (moreover, abc and ABC are considered the same sequence).   
+Check if the document number starts with the sequence 555.   
+Check if the document number ends with the sequence 1a2b.   
+All these methods should be implemented in a separate class in static methods, which will take as input (input parameter) a string entered as input to the program.   
+You also need to create your own exception classes for each situation:   
+Check if the document number contains the sequence abc.   
+Check if the document number starts with the sequence 555.   
+Check if the document number ends with the sequence 1a2b.   
+If the document number does not satisfy the condition, then "throw" an exception.   
+In the class method in which these methods will be called to demonstrate operation, catch the exception with the try-catch construct and display a message in the catch block for user (message to the console).
+
+**Homework required. Part №2:**
+- [x] 1. Given a string of arbitrary length with arbitrary words.    
+Find the shortest word in the string and display it on the screen.   
+Find the longest word in the string and display it on the screen.   
+If there are several such words, then output the last one.
+- [x] 2. Given a string of arbitrary length with arbitrary words.   
+Find a word in which the number of different characters is minimal.   
+The word can contain letters and numbers. If there are several such words, find the first one.   
+For example, in the string "fffff ab f 1234 jkjk" the found word should be "fffff".
+- [x] 3. Given a string of arbitrary length with arbitrary words.  
+Write a program to check if any given word in a string is a palindrome.   
+For example, there is a string, the number 3 is entered, so it is necessary to check whether the 3rd word in this string is a palindrome.
+Provide warning messages in case of erroneous situations: for example, there are 5 words in a line, and the number 500 was passed to the input of the program, etc. situations.
+- [x] 4. An arbitrary string is given. Output to the console a new line that duplicates each letter from the initial line. For example, "Hello" -> "HHeellloo".
+
+**Homework required. Part №3:**
+- [x] Create a class that will have a static method. This method takes three parameters as input: Login, Password, confirmPassword.   
+All fields are of data type String.   
+Login must be less than 20 characters long and must not contain spaces.   
+If login does not meet these requirements, a WrongLoginException must be thrown.   
+Password must be less than 20 characters long, must not contain spaces, and must contain at least one number.   
+Also, password and confirmPassword must be equal.   
+If password does not meet these requirements, a WrongPasswordException must be thrown.   
+WrongPasswordException and WrongLoginException are custom exception classes with two constructors - one default, the other accepts the exception message and passes it to the constructor of the Exception class.   
+The method returns true if the values are true or false otherwise.
+
+**Difficulty doing homework:**
+* There were no global difficulties. Need more practice on using string methods
 
 [Table of contents](#anchor)
