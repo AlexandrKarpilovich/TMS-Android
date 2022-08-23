@@ -1,0 +1,44 @@
+Time to fill the ArrayList with 10,000,000 string elements: 266 (ms)
+Time to fill the LinkedList with 10,000,000 string elements: 1302 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to get the element at index zero in the ArrayList: 0 (ms)
+Time to get the element at index zero in the LinkedList: 0 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to get the element at the last index in the ArrayList: 0 (ms)
+Time to get the element at the last index in the LinkedList: 0 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to get the element at the middle index in the ArrayList: 0 (ms)
+Time to get the element at the middle index in the LinkedList: 14 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to search the element 'nk' in the ArrayList: 31 (ms)
+Time to search the element 'nk' in the LinkedList: 39 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to add the first element in the ArrayList: 8 (ms)
+Time to add the first element in the LinkedList: 0 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to add the last element the ArrayList: 0 (ms)
+Time to add the last element the LinkedList: 0 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to add the middle element in the ArrayList: 0 (ms)
+Time to add the middle element in the LinkedList: 16 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to remove the first element in the ArrayList: 0 (ms)
+Time to remove the first element in the LinkedList: 0 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to remove the last element in the ArrayList: 0 (ms)
+Time to remove the last element in the LinkedList: 0 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Time to remove the middle element in the ArrayList: 16 (ms)
+Time to remove the middle element in the LinkedList: 15 (ms)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+

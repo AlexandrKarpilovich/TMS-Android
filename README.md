@@ -21,6 +21,7 @@ ___
    8. [Lesson 08 - Interfaces and abstract classes](#lesson08)
    9. [Lesson 09 - Exceptions](#lesson09)
    10. [Lesson 10 - String processing](#lesson10)
+   11. [Lesson 11 - Collections. Part №1](#lesson11)
 ___
 
 <a id="chapter01"></a>
@@ -379,5 +380,37 @@ The method returns true if the values are true or false otherwise.
 
 **Difficulty doing homework:**
 * There were no global difficulties. Need more practice on using string methods
+
+[Table of contents](#anchor)
+
+<a id="lesson11"></a>
+### ___Lesson 11 - Collections. Part №1___
+**This lesson talked about:**
+* Introduction to the Collection interface 
+* Collections of type: ArrayList, LinkedList, Stack, Array Deque
+
+**Homework required. Part №1:**
+- [x] The program should compare the speed of all the main actions:   
+   * Taking by index (from the beginning, from the end, from the middle)   
+   * Search by element   
+   * Adding (to the beginning, to the end, to the middle)   
+   * Delete (to the beginning, to the end, to the middle)   
+
+Write the result to the result.txt file.   
+Attach this file to git (it should be displayed in the pull request) + code.   
+Each of the lists must contain 10,000,000 elements. 
+
+**Homework required. Part №2:**
+- [x] Imagine that Java does not have a collection of type ArrayList.   
+Create your own class that simulates the work of a dynamic collection class - i.e. create your custom collection.   
+The collection will be based on an array.   
+A custom collection must store elements of different classes (i.e. it is generic).   
+Provide operations for adding an element, removing an element, getting an element by index, checking whether an element is in the collection, a method for clearing the entire collection.   
+Provide constructor with no parameters - creates an array with a default size.   
+Provide a constructor with a given size of the internal array.   
+Provide the ability to automatically expand the collection when adding an element in the case when the collection is already full. 
+
+**Difficulty doing homework:**
+* There were no global difficulties.
 
 [Table of contents](#anchor)
