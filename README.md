@@ -23,7 +23,10 @@ ___
    10. [Lesson 10 - String processing](#lesson10)
    11. [Lesson 11 - Collections. Part №1](#lesson11)
    12. [Lesson 12 - Collections. Part №2](#lesson12)
+<<<<<<< HEAD
    13. [Lesson 13 - Functional style. Stream API](#lesson13)
+=======
+>>>>>>> main
 ___
 
 <a id="chapter01"></a>
@@ -463,6 +466,7 @@ Provide the ability to automatically expand the collection when adding an elemen
 **Difficulty doing homework:**
 * I lacked a general understanding of the material, as well as time, as I was in the hospital
 
+<<<<<<< HEAD
 [Table of contents](#anchor)
 
 
@@ -495,4 +499,6 @@ Provide the ability to automatically expand the collection when adding an elemen
 **Difficulty doing homework:**
 * There were no global difficulties.
 
+=======
+>>>>>>> main
 [Table of contents](#anchor)
