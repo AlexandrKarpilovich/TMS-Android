@@ -22,6 +22,8 @@ ___
    9. [Lesson 09 - Exceptions](#lesson09)
    10. [Lesson 10 - String processing](#lesson10)
    11. [Lesson 11 - Collections. Part №1](#lesson11)
+   12. [Lesson 12 - Collections. Part №2](#lesson12)
+   13. [Lesson 13 - Functional style. Stream API](#lesson13)
 ___
 
 <a id="chapter01"></a>
@@ -409,6 +411,86 @@ Provide operations for adding an element, removing an element, getting an elemen
 Provide constructor with no parameters - creates an array with a default size.   
 Provide a constructor with a given size of the internal array.   
 Provide the ability to automatically expand the collection when adding an element in the case when the collection is already full. 
+
+**Difficulty doing homework:**
+* There were no global difficulties.
+
+[Table of contents](#anchor)
+
+<a id="lesson12"></a>
+### ___Lesson 12 - Collections. Part №2___
+**This lesson talked about:**
+* Set interface and HashSet class 
+* The concept of hash tables 
+* Map interface and HashMap class
+
+**Homework required. Part №1:**
+- Program "Accounting"   
+- Write a program that will enter information into an employee's personal card. 
+- Map content:
+  - Information about the employee
+  - Report for each month (for 2-3 years). Report content:
+    - Delivered production plan
+    - Fact of execution
+    - salary amount
+    - The amount of the bonus (from the size: bonus = salary, if the fact of implementation = 2 * production plan; if the actual implementation is 1.5 * plan - bonus 0.5 salary, etc.)
+    - The employee is familiar
+  - Card number
+  - Date of creation of the card = date of employment of the employee
+  - The fact of affixing all signatures by the employee   
+- The accounting department, after updating the employee's card (initial filling + filling for the current month), sends the card to the employee for signature (familiarization). The employee is ALWAYS required to sign the document.
+* Use interface Map. Provide information on the screen (document history)
+
+**Homework. Optional part №1:**
+- Continuation of the required task. 
+- Each worker is a separate directory. 
+- Each report is a separate file inside the worker's directory. 
+- Ensure that the data of employees' cards is updated.
+
+**Homework. Optional part №2:**
+- Continuation of an optional task. 
+- Provide organization analytics in a separate file. 
+- The analytics report should contain:
+  - Number of employees who completed the plan (for the completed year)
+  - Ranked list of employees (1st - maximum performance in kind, last - minimum performance)
+  - Ranked list of employees (1st - maximum performance in relative terms, last - minimum performance)
+  - Salary costs for workers
+  - The cost of bonuses to workers
+  - Ranked list of employees (1st - maximum bonus, last - minimum bonus)
+  - List of employees who have not met the annual plan for the last 3 years in a row. 
+- Each output of information to sign. The file must be readable. Execution in Russian.
+
+**Difficulty doing homework:**
+* I lacked a general understanding of the material, as well as time, as I was in the hospital
+
+[Table of contents](#anchor)
+
+
+<a id="lesson13"></a>
+### ___Lesson 13 - Functional style. Stream API___
+**This lesson talked about:**
+* Functional interfaces 
+* Lambda expressions 
+* Optional class 
+* Stream API
+
+**Homework required. Part №1:**
+- Create a collection of the ArrayList class and fill it with random elements of the Integer type.    
+- With Streams:
+  - Remove duplicates
+  - Display all even elements in the range from 7 to 17 (inclusive)
+  - Multiply each element by 2
+  - Sort and display the first 4 elements
+  - Display the number of elements in the stream
+  - Display the arithmetic mean of all numbers in the stream
+
+**Homework required. Part №2:**
+- Create an ArrayList class collection with the name values of all the students in the group.
+- With Streams:
+  - Return the number of people with your name (regardless of upper/lower case letters)
+  - Select all names starting with "a" (regardless of upper/lower case letters)
+  - Sort and return the first element of the collection or "Empty" if the collection is empty
+  - Sort and return the first element of the collection or "Empty" if the collection is empty
 
 **Difficulty doing homework:**
 * There were no global difficulties.
