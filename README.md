@@ -23,6 +23,10 @@ ___
    10. [Lesson 10 - String processing](#lesson10)
    11. [Lesson 11 - Collections. Part №1](#lesson11)
    12. [Lesson 12 - Collections. Part №2](#lesson12)
+<<<<<<< HEAD
+   13. [Lesson 13 - Functional style. Stream API](#lesson13)
+=======
+>>>>>>> main
 ___
 
 <a id="chapter01"></a>
@@ -462,4 +466,39 @@ Provide the ability to automatically expand the collection when adding an elemen
 **Difficulty doing homework:**
 * I lacked a general understanding of the material, as well as time, as I was in the hospital
 
+<<<<<<< HEAD
+[Table of contents](#anchor)
+
+
+<a id="lesson13"></a>
+### ___Lesson 13 - Functional style. Stream API___
+**This lesson talked about:**
+* Functional interfaces 
+* Lambda expressions 
+* Optional class 
+* Stream API
+
+**Homework required. Part №1:**
+- Create a collection of the ArrayList class and fill it with random elements of the Integer type.    
+- With Streams:
+  - Remove duplicates
+  - Display all even elements in the range from 7 to 17 (inclusive)
+  - Multiply each element by 2
+  - Sort and display the first 4 elements
+  - Display the number of elements in the stream
+  - Display the arithmetic mean of all numbers in the stream
+
+**Homework required. Part №2:**
+- Create an ArrayList class collection with the name values of all the students in the group.
+- With Streams:
+  - Return the number of people with your name (regardless of upper/lower case letters)
+  - Select all names starting with "a" (regardless of upper/lower case letters)
+  - Sort and return the first element of the collection or "Empty" if the collection is empty
+  - Sort and return the first element of the collection or "Empty" if the collection is empty
+
+**Difficulty doing homework:**
+* There were no global difficulties.
+
+=======
+>>>>>>> main
 [Table of contents](#anchor)
