@@ -518,7 +518,7 @@ ___
 * Atomic types
 
 **Homework required:**
-- [x] Create three streams T1, T2 and T3    
+- Create three streams T1, T2 and T3    
 Implement the execution of threads in the sequence T3 -> T2 -> T1. Execute 20 times (using the join method)
   - T3 prints "Hi"
   - T2 displays "How are you?"
