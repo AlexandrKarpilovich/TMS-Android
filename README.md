@@ -23,10 +23,8 @@ ___
    10. [Lesson 10 - String processing](#lesson10)
    11. [Lesson 11 - Collections. Part №1](#lesson11)
    12. [Lesson 12 - Collections. Part №2](#lesson12)
-<<<<<<< HEAD
    13. [Lesson 13 - Functional style. Stream API](#lesson13)
-=======
->>>>>>> main
+   14. [Lesson 14 - Definition of Java threads. Part №1](#lesson14)
 ___
 
 <a id="chapter01"></a>
@@ -119,6 +117,7 @@ ___
 * There were no problems with homework. Material learned and understood.
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson04"></a>
 ### ___Lesson 04 - One-Dimensional arrays___
@@ -144,6 +143,7 @@ ___
 * The problems were from the second task of the first part of the homework. I did not understand how to correctly add all elements to the new array, except for unnecessary ones.
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson05"></a>
 ### ___Lesson 05 - Multidimensional arrays___
@@ -179,6 +179,7 @@ B W B W B W B W
   * In the third task, I did not immediately come to how to correctly derive the side diagonal.
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson06"></a>
 ### ___Lesson 06 - Classes and Objects___
@@ -220,6 +221,7 @@ B W B W B W B W
 * Overriding Methods
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson07"></a>
 ### ___Lesson 07 - OOP principles___
@@ -257,6 +259,7 @@ If the treatment plan has any other code, appoint a therapist and prescribe a tr
 * The difficulties were in the homework of the optional part. According to the condition, as I understand it, a treatment plan is already known and a doctor is appointed from this treatment plan. But usually, first, an examination is carried out, a doctor is prescribed, and then a treatment plan and methods of treatment. After all, the patient does not come to the clinic with a treatment plan. Because of this, my solution to the task may not be entirely accurate as necessary by condition.
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson08"></a>
 ### ___Lesson 08 - Interfaces and abstract classes___
@@ -315,6 +318,7 @@ If the treatment plan has any other code, appoint a therapist and prescribe a tr
 * It's not entirely clear when to use an abstract class and when to use an interface
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson09"></a>
 ### ___Lesson 09 - Exceptions___
@@ -331,6 +335,7 @@ If the treatment plan has any other code, appoint a therapist and prescribe a tr
 * Need more practice with overriding methods
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson10"></a>
 ### ___Lesson 10 - String processing___
@@ -387,6 +392,7 @@ The method returns true if the values are true or false otherwise.
 * There were no global difficulties. Need more practice on using string methods
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson11"></a>
 ### ___Lesson 11 - Collections. Part №1___
@@ -419,6 +425,7 @@ Provide the ability to automatically expand the collection when adding an elemen
 * There were no global difficulties.
 
 [Table of contents](#anchor)
+___
 
 <a id="lesson12"></a>
 ### ___Lesson 12 - Collections. Part №2___
@@ -428,7 +435,7 @@ Provide the ability to automatically expand the collection when adding an elemen
 * Map interface and HashMap class
 
 **Homework required. Part №1:**
-- Program "Accounting"   
+- [x] Program "Accounting"   
 - Write a program that will enter information into an employee's personal card. 
 - Map content:
   - Information about the employee
@@ -451,24 +458,24 @@ Provide the ability to automatically expand the collection when adding an elemen
 - Ensure that the data of employees' cards is updated.
 
 **Homework. Optional part №2:**
-- Continuation of an optional task. 
-- Provide organization analytics in a separate file. 
-- The analytics report should contain:
+- Continuation of an optional task.    
+Provide organization analytics in a separate file.    
+The analytics report should contain:
   - Number of employees who completed the plan (for the completed year)
   - Ranked list of employees (1st - maximum performance in kind, last - minimum performance)
   - Ranked list of employees (1st - maximum performance in relative terms, last - minimum performance)
   - Salary costs for workers
   - The cost of bonuses to workers
   - Ranked list of employees (1st - maximum bonus, last - minimum bonus)
-  - List of employees who have not met the annual plan for the last 3 years in a row. 
-- Each output of information to sign. The file must be readable. Execution in Russian.
+  - List of employees who have not met the annual plan for the last 3 years in a row.    
+  
+Each output of information to sign. The file must be readable. Execution in Russian.
 
 **Difficulty doing homework:**
 * I lacked a general understanding of the material, as well as time, as I was in the hospital
 
-<<<<<<< HEAD
 [Table of contents](#anchor)
-
+___
 
 <a id="lesson13"></a>
 ### ___Lesson 13 - Functional style. Stream API___
@@ -479,8 +486,8 @@ Provide the ability to automatically expand the collection when adding an elemen
 * Stream API
 
 **Homework required. Part №1:**
-- Create a collection of the ArrayList class and fill it with random elements of the Integer type.    
-- With Streams:
+- [x] Create a collection of the ArrayList class and fill it with random elements of the Integer type.       
+With Streams:
   - Remove duplicates
   - Display all even elements in the range from 7 to 17 (inclusive)
   - Multiply each element by 2
@@ -489,8 +496,8 @@ Provide the ability to automatically expand the collection when adding an elemen
   - Display the arithmetic mean of all numbers in the stream
 
 **Homework required. Part №2:**
-- Create an ArrayList class collection with the name values of all the students in the group.
-- With Streams:
+- [x] Create an ArrayList class collection with the name values of all the students in the group.    
+With Streams:
   - Return the number of people with your name (regardless of upper/lower case letters)
   - Select all names starting with "a" (regardless of upper/lower case letters)
   - Sort and return the first element of the collection or "Empty" if the collection is empty
@@ -499,6 +506,29 @@ Provide the ability to automatically expand the collection when adding an elemen
 **Difficulty doing homework:**
 * There were no global difficulties.
 
-=======
->>>>>>> main
 [Table of contents](#anchor)
+___
+
+<a id="lesson14"></a>
+### ___Lesson 14 - Definition of Java threads. Part №1___
+**This lesson talked about:**
+* Thread class 
+* Runnable Interface 
+* Stream Synchronization 
+* Atomic types
+
+**Homework required:**
+- Create three streams T1, T2 and T3    
+Implement the execution of threads in the sequence T3 -> T2 -> T1. Execute 20 times (using the join method)
+  - T3 prints "Hi"
+  - T2 displays "How are you?"
+  - T1 displays "What are you doing?"
+
+**Homework. Optional part:**
+- The same, in any way other than join (priorities also do not make sense to use)
+
+**Difficulty doing homework:**
+* Not fully understood how wait() and notify() work
+
+[Table of contents](#anchor)
+___
