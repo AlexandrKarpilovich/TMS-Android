@@ -25,6 +25,7 @@ ___
    12. [Lesson 12 - Collections. Part №2](#lesson12)
    13. [Lesson 13 - Functional style. Stream API](#lesson13)
    14. [Lesson 14 - Definition of Java threads. Part №1](#lesson14)
+   15. [Lesson 15 - Definition of Java threads. Part №2](#lesson15)
 ___
 
 <a id="chapter01"></a>
@@ -529,6 +530,18 @@ Implement the execution of threads in the sequence T3 -> T2 -> T1. Execute 20 ti
 
 **Difficulty doing homework:**
 * Not fully understood how wait() and notify() work
+
+[Table of contents](#anchor)
+___
+
+<a id="lesson15"></a>
+### ___Lesson 15 - Definition of Java threads. Part №2___
+**This lesson talked about:**
+* Synchronization 
+* Working with streams
+
+**Homework required:**
+- No homework
 
 [Table of contents](#anchor)
 ___
