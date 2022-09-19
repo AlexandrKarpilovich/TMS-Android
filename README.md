@@ -3,6 +3,9 @@
 #### This repository was created as part of training at the "TeachMeSkills" school at the "Android developer" course.
 ___
 
+## Chapter: Java
+___
+
 ### Student: ___Aleksandr Karpilovich___
 ### Course: ___Android developer___
 ### Group: ___AN10-onl___
@@ -10,26 +13,22 @@ ___
 
 <a id="anchor"></a>
 ## Table of contents
-1. [Chapter №1: Java](#chapter01)
-   1. [Lesson 01 - Introduction to java](#lesson01)
-   2. [Lesson 02 - Repositories](#lesson02)
-   3. [Lesson 03 - Variables, expressions, operators](#lesson03)
-   4. [Lesson 04 - One-Dimensional arrays](#lesson04)
-   5. [Lesson 05 - Multidimensional arrays](#lesson05)
-   6. [Lesson 06 - Classes and Objects](#lesson06)
-   7. [Lesson 07 - OOP principles](#lesson07)
-   8. [Lesson 08 - Interfaces and abstract classes](#lesson08)
-   9. [Lesson 09 - Exceptions](#lesson09)
-   10. [Lesson 10 - String processing](#lesson10)
-   11. [Lesson 11 - Collections. Part №1](#lesson11)
-   12. [Lesson 12 - Collections. Part №2](#lesson12)
-   13. [Lesson 13 - Functional style. Stream API](#lesson13)
-   14. [Lesson 14 - Definition of Java threads. Part №1](#lesson14)
-   15. [Lesson 15 - Definition of Java threads. Part №2](#lesson15)
+1. [Lesson 01 - Introduction to java](#lesson01)
+2. [Lesson 02 - Repositories](#lesson02)
+3. [Lesson 03 - Variables, expressions, operators](#lesson03)
+4. [Lesson 04 - One-Dimensional arrays](#lesson04)
+5. [Lesson 05 - Multidimensional arrays](#lesson05)
+6. [Lesson 06 - Classes and Objects](#lesson06)
+7. [Lesson 07 - OOP principles](#lesson07)
+8. [Lesson 08 - Interfaces and abstract classes](#lesson08)
+9. [Lesson 09 - Exceptions](#lesson09)
+10. [Lesson 10 - String processing](#lesson10)
+11. [Lesson 11 - Collections. Part №1](#lesson11)
+12. [Lesson 12 - Collections. Part №2](#lesson12)
+13. [Lesson 13 - Functional style. Stream API](#lesson13)
+14. [Lesson 14 - Definition of Java threads. Part №1](#lesson14)
+15. [Lesson 15 - Definition of Java threads. Part №2](#lesson15)
 ___
-
-<a id="chapter01"></a>
-## Chapter №1: Java
 
 <a id="lesson01"></a>
 ### ___Lesson 01 - Introduction to java___
